@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    function chkall(input1,input2)
+    {
+        var objForm = document.forms['form1'];
+        var objLen = objForm.length;
+
+        console.log(objLen);
+        for (var iCount = 0; iCount < objLen; iCount++)
+        {
+            if (input2.checked == true)
+            {
+                if (objForm.elements[iCount].type == "checkbox"){
+                    objForm.elements[iCount].checked = true
+                }
+            }
+            else
+            {
+                if (objForm.elements[iCount].type == "checkbox"){
+                    objForm.elements[iCount].checked = false           
+                }
+            }
+        }
+    }
+    </script>
+    
+    <form id="form1">
+    <input type="checkbox" value="全部選取" onclick='chkall("form1",this)' name="chk"><BR>
+    <input type="checkbox" name="item_001" value="1">1<BR>
+    <input type="checkbox" name="item_002" value="2">2<BR>
+    <input type="checkbox" name="item_003" value="3">3<BR>
+    <input type="checkbox" name="item_003" value="4">4
+    </form>
+</body>
+</html>

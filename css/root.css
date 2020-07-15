@@ -1,0 +1,9 @@
+:root{
+    --header-bgColor:#123A6E;
+    --title-bgColor:#EB9F24;
+    --title-textColor:white;
+    /* --text-style:'Microsoft JhengHei', '微軟正黑體', 'Microsoft YaHei', sans-serif; */
+}
+body{
+    font-family:微軟正黑體!important;
+}

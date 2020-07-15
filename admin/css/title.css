@@ -1,0 +1,6 @@
+@import url("root.css")
+
+thead{
+    background: var(--title-bgColor);
+    color: var(--title-textColor);
+}
